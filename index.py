@@ -11,6 +11,7 @@ def abrir_navegador(navegador):
 
 def abre_aula(url):
     sleep(2)
+    pyautogui.hotkey("ctrlleft", "t")
     pyautogui.write(url)
     pyautogui.press('enter')
     sleep(2)
