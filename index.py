@@ -17,6 +17,7 @@ def abre_aula(url):
 
 def desliga_cam_mic():
     sleep(5)
+    pyautogui.press("esc", 2)
     pyautogui.hotkey('ctrlleft', 'd')
     pyautogui.hotkey('ctrlleft', 'e')
     pyautogui.click(1230,547, duration=0.25)
